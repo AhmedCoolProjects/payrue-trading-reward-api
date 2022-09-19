@@ -48,7 +48,10 @@ export const checkEligibility = (wallet) => {
     }
   }
   // If not eligible, return it as not eligible
-  return { eligible: false, reason: "Not Eligible" };
+  return {
+    eligible: false,
+    reason: "Not Eligible, No NFT or enough staked Propels",
+  };
 };
 
 // Calculate daily reward pool
